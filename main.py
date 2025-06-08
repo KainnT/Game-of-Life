@@ -1,0 +1,2 @@
+game = "game"
+print(game)
