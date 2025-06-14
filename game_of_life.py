@@ -1,6 +1,6 @@
 import numpy as np
 from numba import njit
-import matplotlib as plt 
+import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 
 
@@ -44,9 +44,7 @@ class GameOfLife:
             self.step()
         
 
-#------------------------uso -------
-game = GameOfLife(rows=50, cols=50)  # crea un juego con estado aleatorio
-game.run(10)                         # ejecuta 10 generaciones
-estado_final = game.get_state()     # obtiene el estado final
-
-
+if __name__ == "__main__":
+    game = GameOfLife(rows=50, cols=50)
+    game.run(10)
+    estado_final = game.get_state()
