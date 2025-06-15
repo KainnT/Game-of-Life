@@ -22,7 +22,7 @@ GameLife/
 
 ##  Cómo ejecutar
 
-Asegurate de tener los paquetes necesarios:
+Tener los paquetes necesarios:
 
 ```bash
 pip install -r requirements.txt
