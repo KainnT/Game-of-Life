@@ -1,5 +1,6 @@
 -------- Analisis de los resultados -------
-1. grafico tiempo vs tama;o
+1. grafico tiempo vs tamanno:
+
 Para este grafico se muestra el tiempo promedidado por iteracion en donde este aumenta conforma crece el numero de celdas
 por lo que podemos observar una escala lineal.
 Cuando se observa la curva denominada empirica (linea azul) se puede ver que existe de forma casi lineal 
@@ -13,10 +14,12 @@ en este mismo  tambien se encuetntra la curva empirica, espresada con el color a
 lo que en realidad, prueba la hipotesis de que el tiempo de la ejecucion escala como O(n)
 en cuanto a la se;alizacion de crecimiento cuadratico (O(n^2)) no se presentan se;ales de este, lo que denota que el algoritmo presenta cualidades positivas.
 
+---------------------------------------------------------------------------------------------------------------------
+Como escala:
 
-como escala? 
-el escalamiento del juego se presenta de forma lineal respecto al numero se celdas.
+El escalamiento del juego se presenta de forma lineal respecto al numero se celdas.
 por lo que se puede denotar que:
+
 - si se toma el tiemp por iteracion, este aumenta de manera proporcional al area del tablero.
 
 - en terminos de cuellos de botellam no se presentan grandes saltos en los tama;os que se presentaron, sin embargo, cuando se comenta de posibles limitacions

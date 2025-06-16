@@ -1,6 +1,6 @@
 #  Conway’s Game of Life – Python Implementation
 
-Este proyecto implementa el famoso **Juego de la Vida** de John Conway utilizando **Python**, **NumPy**, **Numba** y **matplotlib**, con enfoque en **eficiencia computacional**, **visualización animada** y **benchmarking empírico**.
+Este proyecto implementa el **Juego de la Vida** de John Conway utilizando **Python**, **NumPy**, **Numba** y **matplotlib**, con enfoque en **eficiencia computacional**, **visualización animada** y **benchmarking empírico**.
 
 ---
 
@@ -36,7 +36,7 @@ pip install -r requirements.txt
 python main.py
 ```
 
-Desde el menú podés:
+Desde el menú se puede:
 
 - Visualizar un patrón clásico animado (`glider`, `blinker`, `toad`)
 - Ejecutar el benchmark de rendimiento y guardar la gráfica
@@ -45,7 +45,7 @@ Desde el menú podés:
 
 ##  Visualización (`animated_visual.py`)
 
-Podés correrlo directamente para guardar un `.gif` de un patrón:
+Se puede correr directamente para guardar un `.gif` de un patrón:
 
 ```bash
 python animated_visual.py
@@ -76,8 +76,15 @@ La función `upgrade()` está optimizada con `@njit` de **Numba**, lo que permit
 
 ---
 
+
+##  Analisis
+
+El Analisis realizado se encuentra en el analisis.txt
+
+---
+
+
 ##  Autores
 
 - **Andrea Arias**  
 - **Axel Alvarado**  
-  Ingeniería en Ciencia de Datos – Lead University  
