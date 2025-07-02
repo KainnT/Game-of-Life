@@ -13,3 +13,8 @@ pillow==11.2.1
 pyparsing==3.2.3
 python-dateutil==2.9.0.post0
 six==1.17.0
+#cProfile @ built-in
+#pstats @ built-in
+#shutil @ built-in
+#subprocess @ built-in
+snakeviz==2.2.0

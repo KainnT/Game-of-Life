@@ -8,14 +8,16 @@ Este proyecto implementa el **Juego de la Vida** de John Conway utilizando **Pyt
 
 ```
 GameLife/
-├── game_of_life.py          # Lógica del juego (clase GameOfLife + función upgrade)
-├── animated_visual.py       # Visualización de patrones clásicos (glider, blinker, toad)
-├── benchmark.py             # Medición de rendimiento vs tamaño de grilla
-├── main.py                  # Menú interactivo para correr visualización o benchmark
-├── game_of_life.gif         # Ejemplo de animación generada
-├── benchmark_gol.png        # Gráfica de rendimiento generada
-├── README.md                # (este archivo)
-└── requirements.txt         # Dependencias del entorno
+├── game_of_life.py           # Lógica del juego (GameOfLife + upgrade)
+├── animated_visual.py        # Visualización de patrones clásicos
+├── benchmark.py              # Benchmark de rendimiento
+├── profile_analysis.py       # script para análisis con cProfile
+├── main.py                   # Menú interactivo para correr el juego
+├── game_of_life.gif          # Ejemplo animado
+├── benchmark_gol.png         # Gráfico de benchmark
+├── README.md                 # Descripción del proyecto
+└── requirements.txt          # Dependencias
+
 ```
 
 ---
