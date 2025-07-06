@@ -5,6 +5,7 @@ import matplotlib.animation as animation
 
 
 @njit #utilizacion de numba para agilizar procesos
+# @profile  # habilitar profiling con kernprof (quitar @njit antes de usar)
 def upgrade(grid): # definicion de funcion de upgrade que recide una matriz (1 = viva, 0 = muerta)
     rows, cols = grid.shape # forma el numero de filas y columnas dependiendo del tama;o de la matriz
     grid_updated = np.zeros((rows, cols), dtype = np.int32) # crea una matriz nueva de inicio uncamente con 0's
