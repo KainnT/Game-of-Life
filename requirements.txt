@@ -3,7 +3,9 @@ cycler==0.12.1
 ffmpeg-python==0.2.0
 fonttools==4.58.2
 future==1.0.0
+joblib==1.5.1
 kiwisolver==1.4.8
+line-profiler==4.2.0
 llvmlite==0.44.0
 matplotlib==3.10.3
 numba==0.61.2
@@ -13,8 +15,3 @@ pillow==11.2.1
 pyparsing==3.2.3
 python-dateutil==2.9.0.post0
 six==1.17.0
-#cProfile @ built-in
-#pstats @ built-in
-#shutil @ built-in
-#subprocess @ built-in
-snakeviz==2.2.0

@@ -1,6 +1,6 @@
 #  Conway’s Game of Life – Python Implementation
 
-Este proyecto implementa el **Juego de la Vida** de John Conway utilizando **Python**, **NumPy**, **Numba** y **matplotlib**, con enfoque en **eficiencia computacional**, **visualización animada** y **benchmarking empírico**.
+Este proyecto implementa el **Juego de la Vida** de John Conway utilizando **Python**, **NumPy**, **Numba**, **Joblib** y **matplotlib**, con enfoque en **eficiencia computacional**, **visualización animada**, **benchmarking empírico** y **diferentes tipos de analisis**.
 
 ---
 
@@ -16,7 +16,17 @@ GameLife/
 ├── game_of_life.gif          # Ejemplo animado
 ├── benchmark_gol.png         # Gráfico de benchmark
 ├── README.md                 # Descripción del proyecto
-└── requirements.txt          # Dependencias
+├── requirements.txt          # Dependencias
+├── line_profile_game.py      # Análisis con line_profiler
+├── line_profile_game.py.lprof.py      # Resultado de analisis con line_profiler
+├── escalabilidad.py          # Analisis de escalabilidad fuerte y debil
+├── strong_efficiency.png     # Grafico de analisis de escalabilidad
+├── strong_speedup.png        # Grafico de analisis de escalabilidad
+├── weak_efficiency.png       # Grafico de analisis de escalabilidad
+├── weak_time.png             # Grafico de analisis de escalabilidad
+├── profile_analisis.py       # Analisis con CProfile
+├── Output.pstats             # Resultado de Analisis con CProfile
+└── output.txt                # Resultado de Analisis con CProfile
 
 ```
 
@@ -55,7 +65,8 @@ python animated_visual.py
 
 Ejemplo de configuración en el script:
 
-```python
+```bash
+python
 rows, cols = 32, 32
 initial_state = get_pattern("toad", (rows, cols))
 ```
@@ -85,6 +96,124 @@ El Analisis realizado se encuentra en el analisis.txt
 
 ---
 
+## Analisis line_profiler (`line_profile_game.py`)
+
+## Instalación
+Primero, instala line_profiler en tu entorno virtual o instala el requirements.
+
+```bash
+pip install line_profiler
+```
+
+## Preparar la función a medir
+Desactiva el decorador @njit de la función a estudiar (por ejemplo upgrade) comentándolo y Añade el decorador especial @profile (sin importarlo) para que kernprof lo reconozca:
+
+```bash
+# @njit
+@profile
+def upgrade(grid):
+```
+
+
+## Ejecutar line_profiler
+Usando kernprof (instalado junto a line_profiler), corre en la terminal:
+
+```bash
+kernprof -l -v line_profile_game.py
+
+```
+Esto va a generar un archivo con la extensión .lprof y además mostrar el resumen en consola.
+
+Si querés verlo después explícitamente:
+
+```bash
+python -m line_profiler line_profile_game.py.lprof
+
+```
+
+## Restaurar 
+Cuando termines el análisis:
+
+Comentar @profile
+Descomentar @njit
+
+para mantener la versión optimizada.
+
+## Análisis de Escalabilidad (`escalabilidad.py`)
+
+## Instalación
+Primero, instala joblib en tu entorno virtual o instala el requirements.
+
+```bash
+pip install numpy matplotlib joblib
+```
+
+## Ejeccutarlo (escalabilidad.py)
+
+Solo corre:
+
+```bash
+python escalabilidad.py
+```
+
+
+El coidgo:
+
+    mide escalamiento fuerte manteniendo una grilla de 512×512 y variando procesos
+
+    mide escalamiento débil manteniendo 100×100 celdas por proceso, escalando proporcionalmente la grilla
+
+    guarda las gráficas en el mismo directorio:
+
+        strong_speedup.png
+
+        strong_efficiency.png
+
+        weak_time.png
+
+        weak_efficiency.png
+
+los resultado en la terminal se muestran como:
+
+    tiempo total
+
+    speedup
+
+    eficiencia
+
+
+## Análisis de Rendimiento con cProfile (`profile_analisis.py`)
+
+
+## Instalación
+Primero, instala snakeviz en tu entorno virtual o instala el requirements.
+
+```bash
+pip install snakeviz
+```
+
+## Ejeccutarlo (escalabilidad.py)
+
+Solo corre:
+
+```bash
+python profile_analisis.py
+
+```
+El coidgo:
+
+    Ejecuta una simulación del Juego de la Vida en una grilla de 512×512 durante 100 pasos
+
+    Utiliza cProfile para capturar estadísticas de rendimiento detalladas
+
+    Genera dos archivos de salida:
+
+    output.pstats: datos en formato binario
+
+    output.txt: resumen en texto legible ordenado por tiempo acumulado
+
+    
+## 
 
 ##  Autores
 
