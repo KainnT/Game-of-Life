@@ -38,8 +38,8 @@ GameLife/
 ├── weak_time.png             # Grafico de analisis de escalabilidad
 ├── profile_analisis.py       # Analisis con CProfile
 ├── Output.pstats             # Resultado de Analisis con CProfile
-└── output.txt                # Resultado de Analisis con CProfile
-
+├── output.txt                # Resultado de Analisis con CProfile
+|
 └── analisis.md               # CONCLUSIONES TAREA 1
 └── Peromance_analisis.md     # CONCLUSIONES TAREA 2
 
