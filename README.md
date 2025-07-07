@@ -40,7 +40,8 @@ GameLife/
 ├── Output.pstats             # Resultado de Analisis con CProfile
 └── output.txt                # Resultado de Analisis con CProfile
 
-└── Peromance_analisis.txt                # CONCLUSIONES TAREA 2
+└── analisis.md               # CONCLUSIONES TAREA 1
+└── Peromance_analisis.md     # CONCLUSIONES TAREA 2
 
 ```
 
