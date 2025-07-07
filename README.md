@@ -92,7 +92,7 @@ La función `upgrade()` está optimizada con `@njit` de **Numba**, lo que permit
 ---
 
 
-##  Analisis
+#  Analisis
 
 Tarea 1
     
