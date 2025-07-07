@@ -4,6 +4,18 @@ Este proyecto implementa el **Juego de la Vida** de John Conway utilizando **Pyt
 
 ---
 
+#  Analisis
+
+Tarea 1
+    
+    El primer Analisis realizado se encuentra en el analisis.md 
+
+Tarea 2 
+    
+    Y el Perfomance Analisis se encuentra en Performance_analisis.md
+
+---
+
 ##  Estructura del Proyecto
 
 ```
@@ -88,19 +100,6 @@ python benchmark.py
 ##  Optimización
 
 La función `upgrade()` está optimizada con `@njit` de **Numba**, lo que permite ejecutar simulaciones a gran escala con excelente rendimiento. El uso de arrays de 32 bits y lógica toroidal mejora el consumo de memoria y la precisión de simulación.
-
----
-
-
-#  Analisis
-
-Tarea 1
-    
-    El primer Analisis realizado se encuentra en el analisis.md 
-
-Tarea 2 
-    
-    Y el Perfomance Analisis se encuentra en Performance_analisis.md
 
 ---
 
