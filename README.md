@@ -28,6 +28,8 @@ GameLife/
 ├── Output.pstats             # Resultado de Analisis con CProfile
 └── output.txt                # Resultado de Analisis con CProfile
 
+└── Peromance_analisis.txt                # CONCLUSIONES TAREA 2
+
 ```
 
 ---
@@ -92,7 +94,9 @@ La función `upgrade()` está optimizada con `@njit` de **Numba**, lo que permit
 
 ##  Analisis
 
-El Analisis realizado se encuentra en el analisis.txt
+El primer Analisis realizado se encuentra en el analisis.md
+
+Y el Perfomance Analisis se encuentra en Performance_analisis.md
 
 ---
 
