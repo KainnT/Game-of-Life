@@ -94,9 +94,13 @@ La función `upgrade()` está optimizada con `@njit` de **Numba**, lo que permit
 
 ##  Analisis
 
-El primer Analisis realizado se encuentra en el analisis.md
+Tarea 1
+    
+    El primer Analisis realizado se encuentra en el analisis.md 
 
-Y el Perfomance Analisis se encuentra en Performance_analisis.md
+Tarea 2 
+    
+    Y el Perfomance Analisis se encuentra en Performance_analisis.md
 
 ---
 
