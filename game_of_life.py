@@ -1,5 +1,5 @@
 import numpy as np
-from numba import njit
+from numba import njit, prange
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 
@@ -9,7 +9,7 @@ import matplotlib.animation as animation
 def upgrade(grid): # definicion de funcion de upgrade que recide una matriz (1 = viva, 0 = muerta)
     rows, cols = grid.shape # forma el numero de filas y columnas dependiendo del tama;o de la matriz
     grid_updated = np.zeros((rows, cols), dtype = np.int32) # crea una matriz nueva de inicio uncamente con 0's
-    for r in range (rows): # recorrido de cada fila
+    for r in prange(rows): # recorrido de cada fila
         for c in range(cols):# recorrido de cada columna
             alive= 0 # acumula el numero de vecinos por cada celda
             for dr in [-1,0,1]:

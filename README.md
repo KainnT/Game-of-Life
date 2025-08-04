@@ -39,9 +39,12 @@ GameLife/
 ├── profile_analisis.py       # Analisis con CProfile
 ├── Output.pstats             # Resultado de Analisis con CProfile
 ├── output.txt                # Resultado de Analisis con CProfile
+├── comparassion.py           # Es la comparacion de diferentes combinacion del decorador de Numba "Njit" con la idea de hacer un benchmark para ver cual es el mas eficiente
+├── benchmark_gol.png         # Es el grafico de las diferentes combinaciones de Njit
 |
 └── analisis.md               # CONCLUSIONES TAREA 1
 └── Peromance_analisis.md     # CONCLUSIONES TAREA 2
+└── Benchmark_analisis.md     # CONCLUSIONES TAREA 3
 
 ```
 
@@ -221,8 +224,28 @@ El coidgo:
     output.txt: resumen en texto legible ordenado por tiempo acumulado
 
     
-## 
+## Análisis de diferentes combinacion de Numba con Njit (`comparassion.py`)
 
+
+## Instalación
+Primero, instala el requirements.
+
+
+
+## Ejeccutarlo (comparassion.py)
+
+Solo corre:
+
+```bash
+python comparassion.py
+
+```
+El codigo:
+
+    Ejecuta una simulación un benchmark de diferentes combinacinoes de Njit para encontrar cual es la mas efectiva
+
+
+    
 ##  Autores
 
 - **Andrea Arias**  
